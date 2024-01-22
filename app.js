@@ -1,14 +1,13 @@
-let a = 10;
-let b = 2;
-let myName = "nico";
-// const myName = "nico";
+const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"]
 
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
+// Get Item from Arra
+console.log(daysOfWeek[4]);
 
-console.log("hello " + myName);
+// Add one more day to the array
+daysOfWeek.push("sun")
 
-myName = "nicolas";
+console.log(daysOfWeek)
 
-console.log("your new name is " + myName);
+const toBuy = ["potato", "tomato", "pizza"];
+toBuy.push("kimbab");;
+console.log(toBuy[2]);
