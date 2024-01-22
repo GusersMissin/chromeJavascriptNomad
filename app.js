@@ -1,32 +1,39 @@
-/*
-const playerName = "nico";
-const playerPoints = 121212;
-const playerHandsome = false;
-const playerFat = "little bit";
+function sayHello(nameOfPerson, age ){
+    console.log("Hello my name is " + nameOfPerson + "! And I'm " + age + " years old!");
+}
 
-const player = ["nico", 1212, false, "little bit"];
-*/
+sayHello("nico", 10);
+sayHello("dal", 20);
+sayHello("lynn", 23);
 
+function plus(firstNumber, secondNumber){
+    console.log(firstNumber + secondNumber);
+}
+
+function divide(firstNumber, secondNumber){
+    console.log(firstNumber / secondNumber);
+}
+
+//without input -> NaN
+plus();
+
+// n / 0 -> Infinity
+divide(100, 0);
+
+plus(8, 60);
+divide(98, 20);
 
 const player = {
     name: "nico",
-    points: 10,
-    fat: true,
+    sayHello: function(otherPersonsName){
+        if(otherPersonsName === undefined){
+            console.log("Hello! My name is " + player.name + "!");
+        } else {
+            console.log("Hello! " + otherPersonsName + "! My name is " + player.name + "!");
+        }
+    },
 };
 
 console.log(player.name);
-console.log(player["name"]);
-
-console.log(player);
-
-player.fat = false;
-console.log(player);
-
-player.lastName = "potato";
-console.log(player);
-
-player.points = player.points + 15;
-console.log(player);
-
-player.points += 15;
-console.log(player);
+player.sayHello();
+player.sayHello("Vanilla");
