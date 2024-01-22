@@ -1,13 +1,32 @@
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat"]
+/*
+const playerName = "nico";
+const playerPoints = 121212;
+const playerHandsome = false;
+const playerFat = "little bit";
 
-// Get Item from Arra
-console.log(daysOfWeek[4]);
+const player = ["nico", 1212, false, "little bit"];
+*/
 
-// Add one more day to the array
-daysOfWeek.push("sun")
 
-console.log(daysOfWeek)
+const player = {
+    name: "nico",
+    points: 10,
+    fat: true,
+};
 
-const toBuy = ["potato", "tomato", "pizza"];
-toBuy.push("kimbab");;
-console.log(toBuy[2]);
+console.log(player.name);
+console.log(player["name"]);
+
+console.log(player);
+
+player.fat = false;
+console.log(player);
+
+player.lastName = "potato";
+console.log(player);
+
+player.points = player.points + 15;
+console.log(player);
+
+player.points += 15;
+console.log(player);
